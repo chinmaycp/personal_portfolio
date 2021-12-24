@@ -25,22 +25,22 @@ const Sidebar = () => {
                     <span>Toronto, Canada</span>
                 </div>
                 <div className="mt-2">
-                    <a href="mailto:chinmaypatel.cp@gmail.com" target="_blank" rel="noreferrer">chinmaypatel.cp@gmail.com</a>
+                    <a href="mailto:chinmaypatel.cp@gmail.com" target="_blank" rel="noreferrer" aria-label="Email">chinmaypatel.cp@gmail.com</a>
                 </div>
             </div>
 
             {/* Social Icons */}
             <div className="flex justify-evenly mx-auto my-5 w-9/12 md:w-full">
-                <a href="https://github.com/chinmaycp" target="_blank" rel="noreferrer">
+                <a href="https://github.com/chinmaycp" target="_blank" rel="noreferrer" aria-label="Github">
                     <AiFillGithub className="w-8 h-8 text-github dark:text-white" />
                 </a>
-                <a href="https://linkedin.com/in/chinmaycp" target="_blank" rel="noreferrer">
+                <a href="https://linkedin.com/in/chinmaycp" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                     <AiFillLinkedin className="w-8 h-8 text-linkedin" />
                 </a>
             </div>
 
             {/* Resume & Theme Toggle Button */}
-            <a href="/resume/Resume - Chinmay Patel.pdf" target="_blank" rel="noreferrer" className="inline-block w-8/12 rounded-full py-2 px-5 text-white dark:text-dark-200 my-2 bg-gradient-to-r from-customGreen to-blue-400">Resume</a>
+            <a href="/resume/Resume - Chinmay Patel.pdf" target="_blank" rel="noreferrer" className="inline-block w-8/12 rounded-full py-2 px-5 text-white dark:text-dark-200 my-2 bg-gradient-to-r from-customGreen to-blue-400" aria-label="Resume">Resume</a>
             <button
                 className="w-8/12 rounded-full py-2 px-5 text-white dark:text-dark-200 my-2 bg-gradient-to-r from-customGreen to-blue-400"
                 onClick={toggleTheme}

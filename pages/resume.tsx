@@ -1,8 +1,9 @@
 import React from 'react';
+import Head from "next/head";
 import { motion } from 'framer-motion';
 import { languages, tools } from '../data';
 import Bar from '../components/Bar';
-import { variants, item, routeAnimation } from '../animations';
+import { item, routeAnimation } from '../animations';
 
 const resume = () => {
     const variants = {
@@ -18,6 +19,9 @@ const resume = () => {
 
     return (
         <motion.div className="px-6 py-2" variants={routeAnimation} initial="hidden" animate="show" exit="exit">
+            <Head>
+                <title>Chinmay Patel | Resume</title>
+            </Head>
             {/* Education & Experience */}
             <div className="grid md:grid-cols-2 gap-6">
                 <motion.div variants={item} initial="hidden" animate="show">

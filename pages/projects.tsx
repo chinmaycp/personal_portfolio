@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from "next/head";
 import { motion } from 'framer-motion';
 import { projects } from '../data';
 import ProjectCard from '../components/ProjectCard';
@@ -25,6 +26,9 @@ const Projects = () => {
 
     return (
         <motion.div className="px-5 py-2 overflow-scroll" style={{ height: '65vh' }} variants={routeAnimation} initial="hidden" animate="show" exit="exit">
+            <Head>
+                <title>Chinmay Patel | Projects</title>
+            </Head>
             <ProjectsNavbar handleFilterCategory={handleFilterCategory} active={active} />
             <motion.div className="grid grid-cols-12 gap-4 my-3 relative" variants={variants} initial="hidden" animate="show">
                 {

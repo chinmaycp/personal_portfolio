@@ -10,6 +10,9 @@ class MyDocument extends Document {
         return (
         <Html lang="en">
             <Head>
+                <meta name="author" content="Chinmay Patel" />
+                <meta name="description" content="Personal portfolio" />
+                <meta name="keywords" content="Full Stack Developer, MERN, Portfolio, NextJS" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet" />
             </Head>
